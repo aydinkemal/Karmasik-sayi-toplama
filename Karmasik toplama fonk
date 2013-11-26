@@ -1,0 +1,37 @@
+#include"stdio.h"
+#include"Windows.h"
+int img(int, int);
+int reel(int, int);
+
+void main()
+{
+	int a, b, c, d,sonuc1,sonuc2;
+	printf("Ilk sayinin normal kismini giriniz ");
+	scanf_s("%d", &a);
+	printf("Ilk sayinin imaginer kismini giriniz ");
+	scanf_s("%d", &b);
+	printf("Ikinci sayinin normal kismini giriniz ");
+	scanf_s("%d", &c);
+	printf("Ikinci sayinin imaginer kismini giriniz ");
+	scanf_s("%d", &d);
+
+	
+	sonuc1 = reel(a,c);
+	sonuc2 = img(b,d);
+	system("CLS");
+	printf(" Toplam = %d+%di ", sonuc1, sonuc2);
+
+}
+int reel(int a, int c)
+{
+
+	return (a + c);
+}
+
+int img(int b, int d)
+
+{
+
+	return(b + d);
+
+}
